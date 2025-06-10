@@ -37,8 +37,8 @@ function saveData() {
 loadData();
 
 // Parse urlencoded bodies
-app.use(bodyParser.json());
-app.use(express.json());
+app.use(bodyParser.json()); // Parse JSON bodies
+app.use(express.json()); // Parse JSON bodies
 
 // Serve static content in directory 'files'
 app.use(express.static(path.join(__dirname, "../client/files")));
@@ -71,6 +71,7 @@ app.post("/add-entry", function (req, res) {
 });
 
 app.delete("/entries/:entryId", (req, res) => {
+  //endpoint to delete an entry by ID
   const entryId = req.params.entryId;
   const index = rescueModel.entries.findIndex((entry) => entry.ID === entryId);
   if (index !== -1) {
@@ -171,5 +172,6 @@ app.post("/login", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server now running on http://localhost:${PORT}`);
+  // Start the server
+  console.log(`Server now running on http://localhost:${PORT}`); // Log the server URL
 });

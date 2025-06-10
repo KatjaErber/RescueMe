@@ -42,6 +42,8 @@
     },
     {
       "ID": "O9d2jOno1",
+      "name": "PinkKittyGarden",
+      "address": "Vorgartenstrasse 2 1020 Wien",
       "number": "2222 2222 2222",
       "category": "cats",
       "url": "https://www.openstreetmap.org/?mlat=48.17861&mlon=16.32575#map=17/48.17861/16.32575"
@@ -53,12 +55,6 @@
       "number": "3333 33333 33333",
       "category": "elephants",
       "url": "https://www.openstreetmap.org/?mlat=48.12296&mlon=14.87319#map=17/48.12296/14.87319"
-    },
-    {
-      "ID": "3snR56sf1",
-      "number": "4444 4444 4444",
-      "category": "camels",
-      "url": "https://www.openstreetmap.org/?mlat=48.05074&mlon=13.85282#map=17/48.05074/13.85282"
     },
     {
       "ID": "1DSZQ1Feq",
